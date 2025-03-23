@@ -1,0 +1,14 @@
+---
+import "../styles/global.css";
+import Wrapper from "../components/index/wrapper.tsx";
+import Layout from "../layouts/Layout.astro";
+import NavbarLeft from "../components/index/navbarLeft.astro";
+import RightContainer from "../components/index/rightContainer.astro";
+---
+
+<Layout>
+  <Wrapper client:load>
+    <NavbarLeft />
+    <RightContainer />
+  </Wrapper>
+</Layout>
